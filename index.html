@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://c.webfontfree.com/c.js?f=SciFiedBitmap" type="text/javascript"></script>
+    <script>
+        
+        // function onColor(menu){
+        //     document.getElementById(menu).style="color: black; background-color: white;"
+        // }
+
+        // function offColor(menus){
+        //     for(let i=0;i<menus.length;i++){
+        //         document.getElementById(menus[i]).style="color: white; background-color: #298eb5;"
+        //     }
+        // }
+
+        function menuMove(event){
+
+            let whiteStyle = "color: black; background-color: white;"
+            let blackStyle = "color: white; background-color: #298eb5;"
+
+            let menu = ["home", "game", "jukebox"]
+            for(let i=0;i<menu.length;i++){
+                if(event.target.id === menu[i]){
+                    document.getElementById("menu").setAttribute("src", menu[i]+".html")
+                    document.getElementById(menu[i]).style = whiteStyle
+                }else{
+                    document.getElementById(menu[i]).style = blackStyle
+                }
+            }
+
+            // if(event.target.id === "home"){
+            //     document.getElementById("menu").setAttribute("src", "home.html")
+            //     onColor("home")
+            //     offColor(["game", "jukebox"])
+            // }else if(event.target.id === "game"){
+            //     document.getElementById("menu").setAttribute("src", "game.html")
+            //     onColor("game")
+            //     offColor(["home","jukebox"])
+            // }else{
+            //     document.getElementById("menu").setAttribute("src", "music.html")
+            //     onColor("jukebox")
+            //     offColor(["game", "home"])
+            // }
+        }
+    </script>
 </head>
 
 <body>
@@ -53,9 +95,14 @@
 
                     </div>
                     <div class="wrapper__right__body">
-                        <!-- <iframe src="home.html"></iframe> -->
+                        <iframe id="menu" src="home.html"></iframe>
                         <!-- <iframe src="game.html"></iframe> -->
-                        <iframe src="music.html"></iframe>
+                        <!-- <iframe src="music.html"></iframe> -->
+                    </div>
+                    <div class="navigation">
+                        <div id="home" class="navigation__item" onclick="menuMove(event)">Home</div>
+                        <div id="game" class="navigation__item"  onclick="menuMove(event)">Game</div>
+                        <div id="jukebox" class="navigation__item"  onclick="menuMove(event)">JukeBox</div>
                     </div>
                 </div>
             </div>
