@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 27px 30px 31px 30px;
+}
+
+.wrapper__header {
+  width: 100%;
+  height: 48px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.main__title {
+  font-family: Malgun Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: justify;
+  color: #55b2d4;
+  margin-right: 5px;
+}
+
+.sub__title {
+  font-family: "SciFiedBitmap", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2px;
+  line-height: 2px;
+  /* identical to box height */
+
+  text-align: justify;
+  letter-spacing: -0.08em;
+
+  color: #000000;
+}
+
+.line {
+  border-top: 1px solid #999999;
+  margin: 8px 0px;
+}
+
+.album__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album__img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 8px;
+}
+
+.album__title {
+  font-family: Malgun Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #0f465e;
+}
+
+.album__singer {
+  font-family: Malgun Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+
+  color: #999999;
+}
+
+.wrapper__body {
+  width: 100%;
+  height: 158px;
+}
+
+table {
+  width: 464px;
+  height: 80px;
+  border-top: 1px solid #999999;
+}
+
+thead {
+  background-color: #eeeeee;
+}
+
+td {
+  border-bottom: 1px dashed #999999;
+}
+
+.column__name {
+  font-family: Malgun Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
+
+  color: #999999;
+}
+
+.row__num {
+  font-family: Malgun Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.row__detail {
+  font-family: Malgun Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+
+  color: #0f465e;
+}
